@@ -393,3 +393,88 @@ nav button {
   }
   
 }
+
+.vps{
+  background: rgb(3, 31, 96);
+  padding: 40px;
+  color: aliceblue;
+}
+.vps h2{
+  text-align: center;
+  color: aliceblue;
+}
+.vpsprice{
+  border-radius: 8px;
+  background: rgba(252, 251, 251, 0.201);
+  width:25%;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-right: 40px;
+  
+}
+.vpsinfo{
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.187);
+  width: 76%;
+  margin-left: 42px;
+  
+}
+.vpsinfo li{
+  list-style: none;
+  text-align: left;
+  padding: 10px;
+  padding-left: 40px;
+  
+}
+.vpsprice p{
+  padding: 10px;
+  font-size: 12px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: rgb(174, 197, 216);
+}
+.vpsprice h3{
+  padding-top: 30px;
+}
+.vpslist{
+  display: flex;
+  justify-content:center;
+  
+  padding-top: 40px;
+}
+.vpsinfo li i{
+  padding-right: 8px;
+}
+.vpsprice span{
+  font-size: 18px;
+  font-weight: bold;
+}
+.vpsprice button{
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: rgba(255, 69, 69, 0.813);
+  border-radius: 8px;
+  color: aliceblue;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  cursor: pointer;
+  font-size: 18px;
+}
+@media screen and (max-width: 400px) {
+  .vpslist{
+    flex-direction: column;
+  }
+  .vpsprice{
+    width: 100%;
+  }
+  .vpsinfo{
+    width: 80%;
+    margin-left: 25px;
+  }
+  .vpsinfo li{
+    padding-left: 18px;
+  }
+  .vpsprice{
+    margin-bottom: 20px;
+  }
+}

@@ -13,7 +13,9 @@ body {
 header {
   background-color: rgb(6, 28, 70);
   box-shadow: inset 1px solid;
+  position: fixed;
   width: 100%;
+  z-index: 1;
 }
 header h2 a {
   text-decoration: none;

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&family=Noto+Sans:wght@100&family=Poppins:wght@300&display=swap");
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   top: 0;
@@ -398,10 +401,11 @@ nav button {
 
 .vps{
   background: rgb(3, 31, 96);
-  padding: 40px;
+  padding: 30px;
   color: aliceblue;
 }
 .vps h2{
+  padding-top: 60px;
   text-align: center;
   color: aliceblue;
 }
@@ -412,15 +416,27 @@ nav button {
   text-align: center;
   padding-bottom: 50px;
   margin-right: 40px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.123);
   
+}
+.minecraftprice{
+  border-radius: 8px;
+  background: rgba(252, 251, 251, 0.201);
+  width:25%;
+  margin-right: 20px;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.123);
 }
 .vpsinfo{
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.187);
-  width: 76%;
-  margin-left: 42px;
+  width: 75%;
+  margin-left: 45px;
   
 }
+
 .vpsinfo li{
   list-style: none;
   text-align: left;
@@ -435,7 +451,17 @@ nav button {
   font-weight: bold;
   color: rgb(174, 197, 216);
 }
+.minecraftprice p{
+  padding: 10px;
+  font-size: 12px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: rgb(174, 197, 216);
+}
 .vpsprice h3{
+  padding-top: 30px;
+}
+.minecraftprice h3{
   padding-top: 30px;
 }
 .vpslist{
@@ -450,6 +476,21 @@ nav button {
 .vpsprice span{
   font-size: 18px;
   font-weight: bold;
+}
+.minecraftprice span{
+  font-size: 18px;
+  font-weight: bold;
+}
+.minecraftprice button{
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: rgba(255, 69, 69, 0.813);
+  border-radius: 8px;
+  color: aliceblue;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  cursor: pointer;
+  font-size: 18px;
 }
 .vpsprice button{
   margin-top: 15px;
@@ -471,7 +512,7 @@ nav button {
   }
   .vpsinfo{
     width: 80%;
-    margin-left: 25px;
+    margin-left: 32px;
   }
   .vpsinfo li{
     padding-left: 18px;
@@ -479,4 +520,17 @@ nav button {
   .vpsprice{
     margin-bottom: 20px;
   }
+  .minecraftlist{
+    display: flex;
+    flex-direction: column;
+  }
+  .minecraftprice{
+    width: 100%;
+  }
+}
+.minecraftlist{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 40px;
 }

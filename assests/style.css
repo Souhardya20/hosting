@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Noto+Sans:wght@100&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Mooli", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: rgb(6, 28, 70);
+  box-shadow: inset 1px solid;
+  width: 100%;
+}
+header h2 a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.container1 {
+  padding: 15px 8em;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+nav ul li {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 0 1.9em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: rgb(6, 185, 245);
+  transition: 0.5s ease;
+}
+nav ul li a:after {
+  content: "";
+  height: 3px;
+  width: 80%;
+  display: flex;
+  background: rgb(19, 235, 156);
+  left: 0;
+  margin-top: 2px;
+  opacity: 0;
+}
+nav ul li a:hover::after {
+  opacity: 1;
+  transition: 0.5s ease;
+  animation: appear 0.5s linear;
+}
+@keyframes appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+.intro {
+  background-color: rgb(7, 40, 97);
+  color: antiquewhite;
+  text-align: center;
+  padding-top: 10%;
+}
+.intro h3 {
+  font-size: 40px;
+}
+.intro h3 span {
+  color: aqua;
+}
+.intro p {
+  margin-top: 2%;
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: bold;
+}
+.button {
+  padding: 80px;
+}
+.button button {
+  margin: 30px;
+  padding: 18px 30px;
+  background: rgba(223, 214, 207, 0.231);
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+.button a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgba(229, 236, 243, 0.881);
+  font-weight: 520;
+}
+.button button:hover {
+  background-color: rgba(240, 248, 255, 0.416);
+  transition: 0.5s ease;
+}
+/* .button :nth-child(2){
+    background-color: rgba(241, 243, 244, 0.416);
+}
+.button :nth-child(3){
+    background-color: rgb(255, 234, 0);
+} */
+#about {
+  background: rgb(9, 49, 113);
+  padding-top: 8em;
+  padding-left: 8em;
+  display: flex;
+  height: 80vh;
+  justify-content: space-between;
+}
+.about h1 {
+  color: aliceblue;
+  font-size: 30px;
+}
+.aboutinfo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.aboutinfo li a {
+  text-decoration: none;
+  color: rgb(174, 197, 216);
+  font-size: 20px;
+}
+.aboutinfo li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+.aboutinfo li i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: rgb(12, 239, 144);
+}
+#about img {
+  width: 20%;
+  height: 55%;
+  margin-right: 10em;
+}
+
+.faqs {
+  background: rgb(5, 37, 109);
+  color: aliceblue;
+  text-align: center;
+  padding: 60px;
+}
+.faqs_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.faq {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+
+  height: fit-content;
+  border-radius: 8px;
+  background: rgb(3, 94, 125);
+  cursor: pointer;
+}
+.faq h4 {
+  font-size: 1rem;
+  line-height: 2.2;
+}
+.faq_icon {
+  align-self: flex-start;
+}
+.faq p {
+  margin-top: 0.8rem;
+  display: none;
+  text-align: left;
+}
+.faq.open p {
+  display: block;
+}
+.faqs h2 {
+  padding-bottom: 40px;
+}
+
+.products {
+  background: rgb(5, 42, 128);
+  color: aliceblue;
+  padding: 2em;
+}
+.products h2 {
+  text-align: center;
+}
+.product1 {
+  padding-top: 40px;
+
+  background: rgba(229, 236, 243, 0.132);
+  border-radius: 8px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.123);
+}
+.product1 li {
+  list-style: none;
+  padding-bottom: 20px;
+  
+}
+.product1 h2 {
+  padding-bottom: 0px;
+}
+.product1 a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.product1 ul {
+  padding-bottom: 40px;
+  margin-right: 30px;
+}
+.products h2 {
+  padding-bottom: 35px;
+}
+.productlist {
+  display: flex;
+  justify-content: space-evenly;
+}
+.product1:hover {
+  background: rgba(229, 236, 243, 0.235);
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.123);
+}
+.product1 ul button {
+  margin-top: 20px;
+  margin-left: 28%;
+  padding: 10px 40px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(0, 128, 255, 0.566);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+.footer {
+  background: rgb(3, 31, 96);
+  text-align: center;
+  
+  padding: 20px;
+}
+.footer p{
+   color: aliceblue;
+   font-weight: bold;
+}
+nav button {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  nav ul li {
+    display: none;
+  }
+  nav button {
+    display: none;
+  }
+  .intro h3 {
+    font-size: 25px;
+    padding-top: 40px;
+  }
+  .intro p {
+    font-size: 11px;
+  }
+  .button {
+    padding: 19px;
+  }
+  .button button {
+    margin: 20px;
+    padding: 9px 14px;
+  }
+  .button a {
+    font-size: 15px;
+  }
+  #about {
+    padding-top: 3em;
+    padding-left: 3em;
+  }
+  .about h1 {
+    font-size: 15px;
+  }
+  .about li a {
+    font-size: 12px;
+  }
+  .about li i {
+    font-size: 12px;
+    margin-right: 4px;
+  }
+  #about {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  #about img {
+    width: 20%;
+    margin-left: 39%;
+    padding-bottom: 20px;
+  }
+  .aboutinfo {
+    text-align: left;
+    justify-content: space-evenly;
+  }
+  .faqs_container {
+    grid-template-columns: 1fr;
+  }
+  .faq {
+    padding: 1.5rem;
+  }
+  .productlist {
+    flex-direction: column;
+  }
+  .product1 {
+    margin-bottom: 20px;
+  }
+  .product1 ul button {
+    margin-left: 35%;
+  }
+  .container1 {
+    padding: 10px 2em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .button {
+    padding-bottom: 85px;
+  }
+  .button button {
+    margin: 9px;
+    padding: 10px 9px;
+  }
+  .intro h3 {
+    font-size: 25px;
+    padding-top: 80px;
+  }
+  .intro p {
+    font-size: 10px;
+  }
+  #about img {
+    width: 70%;
+    height: 50%;
+    margin-left: 15%;
+    padding-bottom: 0px;
+    border-radius: 8px;
+  }
+  #about {
+    padding-top: 3em;
+    padding-left: 0em;
+    padding-bottom: 40px;
+  }
+  .faqs h2 {
+    font-size: 18px;
+  }
+  .faqs {
+    padding: 40px;
+    padding-bottom: 60px;
+  }
+  .faq {
+    padding: 1rem;
+  }
+  .faq h4 {
+    font-size: 12px;
+  }
+  .products h2 {
+    font-size: 18px;
+  }
+  .product1 ul {
+    font-size: 13px;
+  }
+  .product1 ul button {
+    margin-left: 17%;
+  }
+  .product1 ul .btn {
+    margin-left: 10%;
+  }
+  .product1 ul li {
+    margin-right: 5px;
+  }
+  header h2 a {
+    font-size: 18px;
+  }
+  nav ul li.dash {
+    display: block;
+    padding-top: 6px;
+    margin-left: 15px;
+  }
+  nav ul li.dash a {
+    font-size: 12px;
+  }
+  .container1 {
+    padding: 10px 1em;
+  }
+  
+}

@@ -573,7 +573,7 @@ nav button {
   flex-wrap: wrap;
   padding-top: 40px;
 }
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .container1{
     justify-content: space-between;
   }
@@ -647,4 +647,4 @@ nav button {
   .minecraftprice{
     width: 50%;
   }
-}
+} */

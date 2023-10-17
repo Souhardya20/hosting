@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&family=Noto+Sans:wght@100&family=Poppins:wght@300&display=swap");
-html{
+html {
   scroll-behavior: smooth;
 }
 * {
@@ -25,7 +25,7 @@ header h2 a {
   color: aliceblue;
 }
 .container1 {
-  padding: 15px 8em;
+  padding: 15px 5em;
   display: flex;
   text-align: center;
   justify-content: space-between;
@@ -33,7 +33,7 @@ header h2 a {
 nav ul li {
   display: inline-flex;
   justify-content: space-between;
-  margin: 0 1.9em;
+  margin: 0 1em;
 }
 nav ul li a {
   text-decoration: none;
@@ -210,7 +210,6 @@ nav ul li a:hover::after {
 .product1 li {
   list-style: none;
   padding-bottom: 20px;
-  
 }
 .product1 h2 {
   padding-bottom: 0px;
@@ -247,12 +246,12 @@ nav ul li a:hover::after {
 .footer {
   background: rgb(3, 31, 96);
   text-align: center;
-  
+
   padding: 20px;
 }
-.footer p{
-   color: aliceblue;
-   font-weight: bold;
+.footer p {
+  color: aliceblue;
+  font-weight: bold;
 }
 nav button {
   display: none;
@@ -296,13 +295,18 @@ nav button {
     margin-right: 4px;
   }
   #about {
+    padding-top: 3em;
+    padding-left: 0em;
+    padding-bottom: 40px;
     flex-direction: column-reverse;
     text-align: center;
   }
   #about img {
-    width: 20%;
-    margin-left: 39%;
-    padding-bottom: 20px;
+    width: 70%;
+    height: 50%;
+    margin-left: 15%;
+    padding-bottom: 0px;
+    border-radius: 8px;
   }
   .aboutinfo {
     text-align: left;
@@ -324,23 +328,62 @@ nav button {
     margin-left: 35%;
   }
   .container1 {
-    padding: 10px 2em;
+    padding: 10px 1em;
+  }
+  nav ul li.dash a {
+    font-size: 12px;
+  }
+  nav ul li.dash {
+    display: block;
+    padding-top: 6px;
+    margin-left: 15px;
+  }
+  .faqs h2 {
+    font-size: 18px;
+  }
+  .faqs {
+    padding: 40px;
+    padding-bottom: 60px;
+  }
+  .faq {
+    padding: 1rem;
+  }
+  .faq h4 {
+    font-size: 12px;
+  }
+  .products h2 {
+    font-size: 18px;
+  }
+  .product1 ul {
+    font-size: 13px;
+  }
+  .product1 ul button {
+    margin-left: 26%;
+  }
+  .product1 ul .btn {
+    margin-left: 10%;
+  }
+  .product1 ul li {
+    margin-right: 5px;
   }
 }
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 00px) {
+  nav ul li{
+    display: none;
+  }
   .button {
     padding-bottom: 85px;
   }
   .button button {
-    margin: 9px;
+    margin: 0px;
     padding: 10px 9px;
   }
   .intro h3 {
-    font-size: 25px;
+    font-size: 2px;
     padding-top: 80px;
   }
   .intro p {
-    font-size: 10px;
+    font-size: 1px;
   }
   #about img {
     width: 70%;
@@ -396,141 +439,212 @@ nav button {
   .container1 {
     padding: 10px 1em;
   }
-  
-}
+} */
 
-.vps{
+.vps {
   background: rgb(3, 31, 96);
   padding: 30px;
   color: aliceblue;
 }
-.vps h2{
+.vps h2 {
   padding-top: 60px;
   text-align: center;
   color: aliceblue;
 }
-.vpsprice{
+.vpsprice {
   border-radius: 8px;
   background: rgba(252, 251, 251, 0.201);
-  width:25%;
+  width: 25%;
   text-align: center;
   padding-bottom: 50px;
   margin-right: 40px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.123);
-  
 }
-.minecraftprice{
+.minecraftprice {
   border-radius: 8px;
   background: rgba(252, 251, 251, 0.201);
-  width:25%;
+  width: 25%;
   margin-right: 20px;
   text-align: center;
   padding-bottom: 50px;
   margin-bottom: 20px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.123);
 }
-.vpsinfo{
+.vpsinfo {
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.187);
   width: 75%;
   margin-left: 45px;
-  
 }
 
-.vpsinfo li{
+.vpsinfo li {
   list-style: none;
   text-align: left;
   padding: 10px;
   padding-left: 40px;
-  
 }
-.vpsprice p{
+.vpsprice p {
   padding: 10px;
   font-size: 12px;
   padding-bottom: 15px;
   font-weight: bold;
   color: rgb(174, 197, 216);
 }
-.minecraftprice p{
+.minecraftprice p {
   padding: 10px;
   font-size: 12px;
   padding-bottom: 15px;
   font-weight: bold;
   color: rgb(174, 197, 216);
 }
-.vpsprice h3{
+.vpsprice h3 {
   padding-top: 30px;
 }
-.minecraftprice h3{
+.minecraftprice h3 {
   padding-top: 30px;
 }
-.vpslist{
+.vpslist {
   display: flex;
-  justify-content:center;
-  
+  justify-content: center;
+
   padding-top: 40px;
 }
-.vpsinfo li i{
+.vpsinfo li i {
   padding-right: 8px;
 }
-.vpsprice span{
+.vpsprice span {
   font-size: 18px;
   font-weight: bold;
 }
-.minecraftprice span{
+.minecraftprice span {
   font-size: 18px;
   font-weight: bold;
 }
-.minecraftprice button{
+.minecraftprice button {
   margin-top: 15px;
   padding: 10px 20px;
   border: none;
   background: rgba(255, 69, 69, 0.813);
   border-radius: 8px;
   color: aliceblue;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   cursor: pointer;
   font-size: 18px;
 }
-.vpsprice button{
+.vpsprice button {
   margin-top: 15px;
   padding: 10px 20px;
   border: none;
   background: rgba(255, 69, 69, 0.813);
   border-radius: 8px;
   color: aliceblue;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   cursor: pointer;
   font-size: 18px;
 }
-@media screen and (max-width: 400px) {
-  .vpslist{
+@media screen and (max-width: 600px) {
+  .vpslist {
     flex-direction: column;
   }
-  .vpsprice{
+  .vpsprice {
     width: 100%;
   }
-  .vpsinfo{
+  .vpsinfo {
     width: 80%;
     margin-left: 32px;
   }
-  .vpsinfo li{
+  .vpsinfo li {
     padding-left: 18px;
   }
-  .vpsprice{
+  .vpsprice {
     margin-bottom: 20px;
   }
-  .minecraftlist{
+  .minecraftlist {
     display: flex;
     flex-direction: column;
   }
-  .minecraftprice{
+  .minecraftprice {
     width: 100%;
   }
 }
-.minecraftlist{
+.minecraftlist {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .container1{
+    justify-content: space-between;
+  }
+  .about h1 {
+    color: aliceblue;
+    font-size: 35px;
+  }
+  #about {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    height: auto;
+  }
+  #about img {
+    display: none;
+  }
+  .aboutinfo li a {
+    text-decoration: none;
+    color: rgb(174, 197, 216);
+    font-size: 25px;
+  }
+  .aboutinfo {
+    justify-content: none;
+  }
+  .intro h3 {
+    font-size: 30px;
+    padding-top: 80px;
+  }
+  .intro p {
+    font-size: 20px;
+  }
+
+  .productlist {
+    flex-direction: column;
+  }
+  .product1 {
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 25%;
+  }
+  .product1 li i {
+    margin-right: 10px;
+  }
+  .vps {
+    height: 100vh;
+  }
+  .vpslist {
+    flex-direction: column;
+    align-items: center;
+  }
+  .vpsprice {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .vpsinfo {
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.187);
+    width: 75%;
+    margin-left: 58px;
+  }
+  .vps {
+    height: 100%;
+  }
+  .bot{
+    height: 100vh;
+  }
+  .minecraftlist {
+    display: flex;
+    align-items: center;
+  }
+  .minecraftprice{
+    width: 50%;
+  }
 }
